@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleTheme, restoreTheme } from "../redux/features/themeSlice";
-import type { RootState } from "../redux/store";
+import { toggleTheme, restoreTheme } from "@/redux/features/themeSlice";
+import type { RootState } from "@/redux/store";
 import { useRouter } from "next/navigation";
 import "../styles/register.css";
 
