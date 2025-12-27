@@ -2,7 +2,7 @@
 
 import { useParams } from "next/navigation";
 import { useSelector } from "react-redux";
-import type { RootState } from "../../redux/store";
+import type { RootState } from "@/redux/store";
 
 export default function ShopDetailsPage() {
   const { id } = useParams();
