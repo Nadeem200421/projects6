@@ -1,9 +1,9 @@
 "use client";
 
 import { useSelector } from "react-redux";
-import type { RootState } from "@/redux/store";
-import ShopCard from "@/components/shops/ShopCard";
-import "@/styles/shops-page.css";
+import type { RootState } from "../redux/store";
+import ShopCard from "../components/shops/ShopCard";
+import "../styles/shops-page.css";
 
 export default function ShopsPage() {
   const shops = useSelector((state: RootState) => state.data.shops);
