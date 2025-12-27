@@ -2,11 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { login } from "../redux/features/authSlice";
-import { toggleTheme, restoreTheme } from "../redux/features/themeSlice";
-import type { RootState } from "../redux/store";
+import { login } from "@/redux/features/authSlice";
+import { toggleTheme, restoreTheme } from "@/redux/features/themeSlice";
+import type { RootState } from "@/redux/store";
 import { useRouter } from "next/navigation";
-import "../styles/login.css";
+import "@/styles/login.css";
+
 
 export default function LoginPage() {
   const dispatch = useDispatch();
