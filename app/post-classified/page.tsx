@@ -2,11 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import type { RootState } from "@/redux/store";
+import type { RootState } from "../redux/store";
 import { useRouter } from "next/navigation";
-import { toggleTheme, restoreTheme } from "@/redux/features/themeSlice";
-import "@/styles/post-classified.css";
-
+import { toggleTheme, restoreTheme } from "../redux/features/themeSlice";
+import "../styles/post-classified.css";
 
 export default function PostClassifiedPage() {
   const dispatch = useDispatch();
